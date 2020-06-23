@@ -1,0 +1,123 @@
+/* Stylesheet for responsive css */
+
+/* Large Desktop */
+@media all and (max-width: 9999px) and (min-width: 1200px) {
+
+	.container { width: 1120px; }
+	.slider-image{ width:737px; }
+	.slider-details{ width:382px; }	
+	#content{ width:726px; margin-right:20px; }
+	#sidebar{ width:373px; }
+	.coll-3{ width: 353px; margin-right:30px; }
+	.home-news aside{ min-height:190px;}
+	
+}
+
+/* Small Desktop */
+@media all and (max-width: 1000px) and (min-width: 0px) {
+
+	.container { width: 860px; }
+	.slider-image{ width:567px; }
+	.slider-details{ width:292px; }
+	#content{ width:566px; margin-right:20px; }
+	#sidebar{ width:273px; }
+	.coll-3{ margin-right:20px; width: 273px;}
+
+}
+
+/* Tablet */
+@media all and (max-width: 900px) and (min-width: 0px) {
+
+	.container { width: 700px; }
+	.slider-image{ width:447px; }
+	.slider-details{ width:252px; }
+	#content{ width:440px; margin-right:20px; }
+	#sidebar{ width:240px; }
+	.coll-3{ margin-right:20px; width: 220px;}
+	.slider-details h3{font-size:22px; line-height:28px; font-weight:400;}
+	.coll-3 h4 {font-size:18px; line-height:24px; font-weight:400;}
+	input, textarea, select{ width:100%; padding:11px 10px;}
+
+}
+
+/* Small Tablet */
+@media all and (max-width: 719px) and (min-width: 0px) {
+
+	.container { width: 600px; }
+	.account .user-name{ display:none;}
+	.account ul li a{line-height:40px;}
+	.account ul li a .icons{
+		background:url(../images/icons-tab.png) 0 0 no-repeat;
+		height:40px;
+		width:30px;
+	}	
+	.account .messages .icons{background-position:0 0;	}
+	.account .favorite .icons{background-position:-30px 0;}
+	.account .notes .icons{background-position:-60px 0;	}
+	.account .active .icons{background-position-y:-40px; }
+	.toggle-nav { display: block; }
+	#site-nav { display: none; }
+	.toggle-nav { display: block; }
+	#site-nav, 
+	#site-nav .container { height: auto; overflow: hidden; }
+	#site-nav .next-fixture { display: none; }
+	#site-nav .menu { float: none; }
+	#site-nav ul { float: none; border: none; }
+	#site-nav ul li {
+		float: none;
+		border: none !important;
+	}
+		#site-nav ul li a {
+			float: none;
+			border: none;
+			padding: 15px 20px;
+			line-height: normal;
+			border-bottom: 1px solid rgba(255,255,255,0.1);
+		}
+		#site-nav ul li ul {
+			display: block!important;
+			visibility: visible!important;
+			width: auto;
+			position: static;
+		}
+			#site-nav ul li ul li a { padding-left: 30px; }
+	.slider-image{ width:600px; border-right:0; }
+	.slider-details{ background:rgba(0,0,0,.2); width:100%; float:none; position:absolute; bottom:0; text-shadow:1px 1px 0 rgba(0,0,0,.4); }
+	.slider-details h3{ color:#FFF;}
+	.slider-details p{ color:#EEE;}
+	.slider-details p, .promo p{ font-weight:400;}	
+	#content{ width:100%; margin:0 0 20px 0; }
+	#sidebar{ width:100%;; }
+	
+	.coll-3{ margin-right:10px; width: 193px;}
+	.left, .right{ width:100%; display:block;}
+	.account{ float:right;}
+	.account .form-btn{ width:40px; height:40px;}
+	.account .form-field{ height:40px; line-height:40px;}	
+	#site-header .search {display:block;}
+	#site-nav .search { display:none;}
+	
+	
+}
+
+/* Phone */
+@media all and (max-width: 650px) and (min-width: 0px) {
+	
+	.container { width: auto; padding: 0 30px;  }
+	.slider-image{ width:100%; }
+	.slider-details{ width:100%; }
+	.coll-3{ margin: 0 0 10px 0; width: 100%;}
+	.home-news aside{ min-height:inherit;}
+
+}
+
+/* Phone Portrait */
+@media all and (max-width: 479px) and (min-width: 0px) {
+	
+	.slider-image{ }
+	.container { width: 100%; padding: 0 10px;}
+	.slider-image{ width:100%; }
+	.slider-details{ width:100%; }	
+	.nodisplay{ display:none;}
+	
+}

@@ -1,0 +1,92 @@
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(background.jpg);
+	background-size: cover;
+	
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.french-wine{
+	color: #B2174A;
+}
+.gray{
+	color: #2E4C5B;
+}
+.text-center {
+  text-align: center!important;
+}
+.container{
+	margin: 0 15% 0 15%;
+	padding: 20px 20px 40px 20px;
+	background-color: #fff;
+}
+.col-3>a{
+	margin: 15px 15px 15px 15px;
+	width: 28%;
+}
+.col-3>a>img{
+	width: 100%;
+
+}
+#navbar{
+	background: #00171F;
+	width: 100%;
+	height: 55px;
+	font-weight: 700;
+}
+#navbar>.container{
+	margin: 0 15% 0 15%;
+	padding: 0 20px 0 20px;
+	background-color: #00171F;
+}
+.navbar-item{
+	width: 100%;
+	padding-top: 6px;
+}
+.navbar-brand{
+	font-size: 32px!important;
+}
+.prim-item{
+	margin-left: 45%;
+}
+.navbar-item>a{
+	color: #B2174A;
+	font-size: 26px;
+	padding-left: 20px;
+}
+.navbar-item>a:hover{
+	color: #4F646F;
+}
+/*Descriere*/
+#descriere>.container>.detalii>p{
+	font-size: 20px;
+}
+.detalii-tab>ul>li{
+	font-size: 20px;
+}
+.detalii-tab>table{
+	width: 100%;
+}
+table{
+	border-collapse: collapse;
+}
+td, th {
+ 	border: 1px solid #000;
+  	text-align: left;
+  	padding: 8px;
+  	font-size: 20px;
+}
+.imagini{
+	margin-top: 15px;
+}
+/*  Pentru rezolutia 1024x768 meniul sa arate corect, "Acasa" "Galerie" "Contacte" sa nu se mute  */
+@media (min-width: 1020px) and (max-width: 1025px){
+	.prim-item{
+		margin-left: 25%;
+	}
+}

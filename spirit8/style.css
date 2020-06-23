@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+/*============	FONT	============*/
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('fonts/OpenSansBold.eot');
+  src: url('fonts/OpenSansBold.eot') format('embedded-opentype'), url('fonts/OpenSansBold.woff2') format('woff2'), url('fonts/OpenSansBold.woff') format('woff'), url('fonts/OpenSansBold.ttf') format('truetype'), url('fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url('fonts/OpenSansItalic.eot');
+  src: url('fonts/OpenSansItalic.eot') format('embedded-opentype'), url('fonts/OpenSansItalic.woff2') format('woff2'), url('fonts/OpenSansItalic.woff') format('woff'), url('fonts/OpenSansItalic.ttf') format('truetype'), url('fonts/OpenSansItalic.svg#OpenSansItalic') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('fonts/OpenSansLight.eot');
+  src: url('fonts/OpenSansLight.eot') format('embedded-opentype'), url('fonts/OpenSansLight.woff2') format('woff2'), url('fonts/OpenSansLight.woff') format('woff'), url('fonts/OpenSansLight.ttf') format('truetype'), url('fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('fonts/OpenSansRegular.eot');
+  src: url('fonts/OpenSansRegular.eot') format('embedded-opentype'), url('fonts/OpenSansRegular.woff2') format('woff2'), url('fonts/OpenSansRegular.woff') format('woff'), url('fonts/OpenSansRegular.ttf') format('truetype'), url('fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+  font-family: 'OpenSansSemibold';
+  src: url('fonts/OpenSansSemibold.eot');
+  src: url('fonts/OpenSansSemibold.eot') format('embedded-opentype'), url('fonts/OpenSansSemibold.woff2') format('woff2'), url('fonts/OpenSansSemibold.woff') format('woff'), url('fonts/OpenSansSemibold.ttf') format('truetype'), url('fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+/*======VARIABLE FONT======*/
+.bold {
+  font-family: "OpenSansBold", sans-serif;
+}
+.italic {
+  font-family: "OpenSansItalic", sans-serif;
+}
+.light {
+  font-family: "OpenSansLight", sans-serif;
+}
+.regular {
+  font-family: "OpenSansRegular", sans-serif;
+}
+.semibold {
+  font-family: "OpenSansSemibold", sans-serif;
+}
+.lato {
+  font-family: "Lato", sans-serif;
+}
+.roman {
+  font-family: "Times New Roman", sans-serif;
+}
+ul,
+li {
+  list-style-type: none;
+}
+/*============	MENU	============*/
+html,
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 100%;
+  animation: qwerty 9s infinite;
+}
+
+.menu > a:hover {
+  text-decoration: none;
+}
+.menu > a > p {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 10px;
+  color: #fff;
+}
+.menu > a > p:hover {
+  color: #fcad45;
+}
+.menu > ul {
+  margin-top: 15px;
+  list-style-type: none;
+}
+.menu > ul > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.menu > ul > a > li {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 12px;
+}
+.menu > ul > a > li:hover {
+  color: #fcad45;
+}
+.menu > ul > a > li > hr {
+  border-style: solid;
+  border-top-width: 0px;
+  margin-top: 7px;
+  background-color: #fcad45;
+  height: 2px;
+  margin-bottom: 0px;
+}
+/*============	MAIN	============*/
+#main {
+  background-image: url(img/01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  /*====BUTTON CONTINUE====*/
+}
+#main > div > div {
+  width: 100%;
+  height: 100%;
+  animation: qwerty 9s infinite;
+}
+@keyframes qwerty {background-size:cover;
+  from {
+    background: linear-gradient(to top left, purple 15%, crimson 50%, orangered 75%, gold 100%);
+  }
+  to {
+    background: linear-gradient(to top left, purple 15%, crimson 50%, orangered 75%, gold 100%);
+  }
+}
+#main > div > div > h1 {
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 44px;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0;
+  padding-top: 16%;
+}
+#main > div > div > h1 > span {
+  font-family: "OpenSansBold", sans-serif;
+  color: #fcad45;
+}
+#main > div > div > p {
+  font-family: "Times New Roman", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+#main a.fa.fa-angle-down {
+  padding: 10px 15px;
+  color: #fff;
+  border: 2px solid #b4b4b4;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-top: 200px;
+  transition: all 0.5s;
+}
+#main a.fa.fa-angle-down:hover {
+  background: #fcac45;
+  color: #ffffff;
+  border: 2px solid #fcac45;
+}
+/*============	ABOUT	============*/
+.about-title {
+  font-family: "OpenSansRegular", sans-serif;
+  text-transform: uppercase;
+}
+.about-title > h2 {
+  font-size: 34px;
+  margin-top: -5px;
+}
+.about-title > h2 > span {
+  font-family: "OpenSansBold", sans-serif;
+}
+.about-title > hr {
+  width: 99px;
+  background-color: #fcac45;
+  border-top: 0;
+  height: 4px;
+  float: left;
+  margin-top: -5px;
+}
+.about-text > p {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 18px;
+  color: #6c6c6c;
+  margin-top: 15px;
+}
+.about-text > ul {
+  list-style-image: url(img/about-list.svg);
+}
+.about-text > ul > li {
+  font-family: "OpenSansItalic", sans-serif;
+  font-size: 16px;
+}
+.about-text > ul > li > span {
+  font-size: 18px;
+  font-family: "OpenSansSemibold", sans-serif;
+}
+/*============	FONT	============*/
+/*============	FONT	============*/
+/*============	FONT	============*/
+/*============	FONT	============*/
+/*============	FONT	============*/
+/*============    	АДАПТИВ    ===========*/

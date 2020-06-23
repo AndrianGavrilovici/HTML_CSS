@@ -1,0 +1,331 @@
+/*============	FONT	============*/
+
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('fonts/OpenSansItalic.eot');
+    src: url('fonts/OpenSansItalic.eot') format('embedded-opentype'),
+         url('fonts/OpenSansItalic.woff2') format('woff2'),
+         url('fonts/OpenSansItalic.woff') format('woff'),
+         url('fonts/OpenSansItalic.ttf') format('truetype'),
+         url('fonts/OpenSansItalic.svg#OpenSansItalic') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('fonts/OpenSansLight.eot');
+    src: url('fonts/OpenSansLight.eot') format('embedded-opentype'),
+         url('fonts/OpenSansLight.woff2') format('woff2'),
+         url('fonts/OpenSansLight.woff') format('woff'),
+         url('fonts/OpenSansLight.ttf') format('truetype'),
+         url('fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('fonts/OpenSansRegular.eot');
+    src: url('fonts/OpenSansRegular.eot') format('embedded-opentype'),
+         url('fonts/OpenSansRegular.woff2') format('woff2'),
+         url('fonts/OpenSansRegular.woff') format('woff'),
+         url('fonts/OpenSansRegular.ttf') format('truetype'),
+         url('fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('fonts/OpenSansSemibold.eot');
+    src: url('fonts/OpenSansSemibold.eot') format('embedded-opentype'),
+         url('fonts/OpenSansSemibold.woff2') format('woff2'),
+         url('fonts/OpenSansSemibold.woff') format('woff'),
+         url('fonts/OpenSansSemibold.ttf') format('truetype'),
+         url('fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+		/*======VARIABLE FONT======*/
+.bold{
+	font-family:"OpenSansBold", sans-serif;
+}
+.italic{
+	font-family: "OpenSansItalic", sans-serif;
+}
+.light{
+	font-family: "OpenSansLight", sans-serif;
+}
+.regular{
+	font-family: "OpenSansRegular", sans-serif;
+}
+.semibold{
+	font-family: "OpenSansSemibold", sans-serif;
+}
+.lato{
+    font-family: "Lato", sans-serif;
+}
+.roman{
+	font-family: "Times New Roman", sans-serif;
+}
+
+
+
+
+html,body{
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	margin: 0;
+	padding: 0;
+}
+a{
+	display:inline-block;
+}
+/*============	MENU	============*/
+#menu a.navbar-brand{
+	.lato;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #fff;
+	&:hover{
+		color: #fcad45;
+	}
+}
+#menu {
+	transition: all 0.8s;
+}
+.on{
+	padding:0px !important;
+	background-color: #000 !important;
+
+}
+.navbar-inverse .navbar-nav >.active >a{
+	&:hover{
+		background-color: transparent !important;
+		color: #fcad45 !important;
+	}
+	&:focus{
+			background-color: transparent !important;
+		color: #fcad45 !important;
+	}
+		background-color: transparent !important;
+		color: #fcad45 !important;
+}
+#menu.navbar-inverse {
+	background-color: rgba(248, 248, 248, 0.1);
+	border-color: rgba(231, 231, 231, 0.1);
+}
+#menu.navbar-inverse .navbar-nav >li{
+	&:hover{
+	background-color: #fcad45;
+	transform:skew(-15deg);
+	}
+}
+#menu.navbar-inverse .navbar-nav >li>a{
+	.lato;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+
+	&:hover{
+		transform:skew(15deg);
+		color: #fff !important;
+	}
+}
+/*============	HOME	============*/
+#main{
+	background-image: url(img/bg-main.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+&>div>div{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	height: 750px;
+	background-attachment: fixed;
+	&>h1{
+		.light;
+		font-size: 44px;
+		color: #fff;
+		text-transform: uppercase;
+		margin:0;
+		padding-top: 235px;
+		&>span{
+			.bold;
+			color: #fcad45;
+		}
+	}
+	&>p{
+		.roman;
+		color: #fff;
+		font-size: 20px;
+		letter-spacing: -1px;
+	}
+}
+	/*====BUTTON CONTINUE====*/
+a.fa.fa-angle-down {
+	padding: 10px 15px;
+	color: #fff;
+	border: 2px solid #b4b4b4;
+	border-radius: 50%;
+	font-size: 24px;
+	margin-top: 200px;
+	transition: all 0.5s;
+	&:hover{
+		background: #fcac45;
+		color: #ffffff;
+		border: 2px solid #fcac45;
+	}
+}
+}
+
+/*============	ABOUT	============*/
+#about{
+	padding-top:70px;
+	padding-bottom: 70px;
+}
+.about-title{
+	.regular;
+	text-transform: uppercase;
+	&>h2{
+		font-size: 34px;
+		margin-top: -5px;
+		&>span{
+			.bold;
+		}
+	}
+	&>hr{
+		width: 99px;
+		background-color: #fcac45;
+		border-top: 0;
+		height: 4px;
+		float:left;
+		margin-top: -5px;
+	}
+}
+.about-text{
+	&>p{
+		.roman;
+		font-size: 18px;
+		color: #6c6c6c;
+		margin-top: 15px;
+	}
+	&>ul{
+		
+		&>li{
+			.italic;
+			font-size: 16px;
+			&>span{
+				font-size: 18px;
+				.semibold;
+			}
+		}
+	}
+}
+
+
+/*============	TEAM	============*/
+#team{
+	background: url(img/03.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	&>div{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	height: auto;
+	background-attachment: fixed;
+	padding: 80px 0;
+	}
+}
+.team-title{
+	&>h1{
+		margin-top:-15px;
+		.light;
+		font-size: 44px;
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;	
+		&>span{
+			.semibold;
+		}
+	}
+
+}
+
+
+.line>hr{
+	
+	border-color: #fcad45;
+}
+img.img-circle.team-img {
+	width: 120px;
+	height: 120px;
+	border: 4px solid transparent;
+	transition: all 0.5s;
+}
+
+#team-carousel{ padding-top:55px;}
+#team-carousel .item{
+    padding: 0;
+    margin: 15px;
+    color: #FFF;
+    text-align: center;
+}
+
+#team .item .thumbnail:hover>img.img-circle.team-img{
+	border: 4px solid #FCAC45;
+}
+#team .thumbnail {
+	background: transparent;
+	border: 0;
+}
+
+#team .thumbnail .caption {
+	padding: 9px;
+	color: #F2F2F2;
+}
+
+
+.owl-theme .owl-controls .owl-page.active span{
+	background: #FCAC45;
+}
+
+
+/*============	FONT	============*/
+
+
+/*============	FONT	============*/
+
+
+/*============	FONT	============*/
+
+
+/*============	FONT	============*/
+
+
+
+/*============    	АДАПТИВ    ===========*/
+
+@media(min-width:0px) and (max-width:320px) {
+	
+}
+
+@media(min-width:321px) and (max-width:480px) {
+	
+}
+
+@media(min-width:481px) and (max-width:768px) {
+	
+}
+
+@media(min-width:769px) and (max-width:992px) {
+	
+}
+
+@media(min-width:993px) and (max-width:1200px) {
+	
+}
